@@ -43,3 +43,5 @@ Pods/
 # Carthage
 Carthage
 Segment_Appboy.framework.zip
+.swiftpm/
+Package.resolved

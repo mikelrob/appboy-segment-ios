@@ -1,10 +1,18 @@
-#import "SEGAppboyHelper.h"
-#import "SEGAppboyIntegration.h"
+#if SWIFT_PACKAGE
+#import "Segment.h"
+#import "Appboy.h"
+#else
+
 #if defined(__has_include) && __has_include(<Appboy_iOS_SDK/AppboyKit.h>)
 #import <Appboy_iOS_SDK/AppboyKit.h>
 #else
 #import "Appboy-iOS-SDK/AppboyKit.h"
 #endif
+
+#endif
+
+#import "SEGAppboyHelper.h"
+#import "SEGAppboyIntegration.h"
 
 @interface SEGAppboyHelper ()
 

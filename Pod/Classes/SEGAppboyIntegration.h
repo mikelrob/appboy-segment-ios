@@ -1,8 +1,15 @@
+#if SWIFT_PACKAGE
+#import "Segment.h"
+#import "Appboy.h"
+#else
+
 #import <Foundation/Foundation.h>
 #if __has_include(<Segment/SEGIntegration.h>)
 #import <Segment/SEGIntegration.h>
 #elif __has_include(<Analytics/SEGIntegration.h>)
 #import <Analytics/SEGIntegration.h>
+#endif
+
 #endif
 
 @interface SEGAppboyIntegration : NSObject<SEGIntegration>
